@@ -1,5 +1,5 @@
 class Ninja:
-                                    # implement __init__( first_name , last_name , treats , pet_food , pet )
+                                                                                                                                    # implement __init__( first_name , last_name , treats , pet_food , pet )
 
 
 def __init__(self, first_name, last_name, treats, pet_food, pet):
@@ -10,14 +10,31 @@ def __init__(self, first_name, last_name, treats, pet_food, pet):
     self.pet = pet
 
 
-                                # implement the following methods:
-                                # walk() - walks the ninja's pet invoking the pet play() method
-                                # feed() - feeds the ninja's pet invoking the pet eat() method
-                                # bathe() - cleans the ninja's pet invoking the pet noise() method
+def walk(self):
+    self.pet.play()
+    return self
+
+
+def feed(self):
+    if len(self.pet_food) > 0:
+        self.pet.eat()
+    print("Oh no!!! You need more pet food!")
+    return self
+
+
+def bathe(self):
+    self.pet.noise()
+    return self
+
+
+                                                                                                                                # implement the following methods:
+                                                                                                                                # walk() - walks the ninja's pet invoking the pet play() method
+                                                                                                                                # feed() - feeds the ninja's pet invoking the pet eat() method
+                                                                                                                                # bathe() - cleans the ninja's pet invoking the pet noise() method
 
 
 class Pet:
-                                    # implement __init__( name , type , tricks ):
+                                                                                                                                    # implement __init__( name , type , tricks ):
 
 
 def __init__(self, name, type, tricks, noise):
@@ -50,8 +67,8 @@ def noise(self):
     print(self.noise)
 
 
-                                # implement the following methods:
-                                # sleep() - increases the pets energy by 25
-                                # eat() - increases the pet's energy by 5 & health by 10
-                                # play() - increases the pet's health by 5
-                                # noise() - prints out the pet's sound
+                                                                                                                                # implement the following methods:
+                                                                                                                                # sleep() - increases the pets energy by 25
+                                                                                                                                # eat() - increases the pet's energy by 5 & health by 10
+                                                                                                                                # play() - increases the pet's health by 5
+                                                                                                                                # noise() - prints out the pet's sound
